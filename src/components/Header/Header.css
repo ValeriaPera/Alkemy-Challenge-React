@@ -1,0 +1,102 @@
+.header-container {
+  background-image: url(./comic-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1% 0;
+}
+.header-title {
+  font-size: 3rem;
+  font-family: "Luckiest Guy", cursive;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: -20px;
+}
+.header-subtitle {
+  position: relative;
+  top: -24px;
+  font-size: 0.8rem;
+}
+.header-nav {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #ffc41a;
+  border-radius: 3px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.titles {
+  background: url(./dialogoOvalComic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 500px 400px;
+  padding: 7% 3%;
+  display: inline-block;
+}
+
+.header-nav-item {
+  font-size: 1.5rem;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+}
+.header-nav-item:hover {
+  opacity: 0.8;
+}
+
+.nav-item_mod {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  display: inline;
+}
+.nav-item_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 455px) {
+  .nav-item_mod {
+    display: none;
+  }
+  .header-title {
+    font-size: 2.5rem;
+    position: relative;
+    top: -21px;
+  }
+  .titles {
+    padding: 25% 7%;
+    background-size: 436px 358px;
+  }
+  .header-subtitle {
+    position: relative;
+    top: -30px;
+  }
+  .header-container {
+    padding: 10% 0 1%;
+  }
+}
+
+@media screen and (min-width: 456px) and (max-width: 1200px) {
+  .titles {
+    padding: 11% 3%;
+    background-size: 500px 383px;
+  }
+}
+.credits {
+  font-size: 0.8rem;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+}
+.credits,
+.header-subtitle {
+  font-weight: bold;
+}
